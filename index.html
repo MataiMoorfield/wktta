@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Google Sheets to CSV (No API)</title>
+    <title>Display CSV from Google Sheets (Auto-Refresh)</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 </head>
 <body>
-  <button id="loadButton">Load CSV</button>
-  <pre id="csvDisplay"></pre>
+    <div id="csv-container"></div>
 
-  <script src="js/sheet.js"></script>
+    <script>
+        const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRE_9xdJNgAT4WZpzND7NLhVYy8yOQqF0xeCyeQAx5y0c_XXcWKwmVxQl29VYu-oa-Xa5hcWCaIfQJg/pub?gid=0&single=true&output=csv';
+        const csvContainer = document.getElementById('csv-container');
+
+        function loadCSV() {
+            Papa.parse(csvUrl, {
+                download: true,
+                header: false,
+                complete: function(results) {
+                    const data = results.data;
+                    if (data.length > 0) {
+                        let table = '<table>';
+                        for (const row of data) {
+                            table += '<tr>';
+                            for (const cell of row) {
+                                table += '<td>' + cell + '</td>';
+                            }
+                            table += '</tr>';
+                        }
+                        table += '</table>';
+                        csvContainer.innerHTML = table;
+                    } else {
+                        csvContainer.innerHTML = '<p>No data found.</p>';
+                    }
+                },
+                error: function(error) {
+                    csvContainer.innerHTML = '<p>Error loading CSV: ' + error.message + '</p>';
+                }
+            });
+        }
+
+        loadCSV();
+    </script>
 </body>
 </html>
