@@ -1,0 +1,83 @@
+{
+  "trigger_auto_manual": "Automatic",
+  "use_regex_to_check_for_tags": false,
+  "statusBar_trigger_indicator": true,
+  "folder_tag_pattern": [
+    {
+      "folder": "home/areas/journal/daily notes",
+      "tag": "#dailynote",
+      "pattern": ""
+    },
+    {
+      "folder": "home/areas/photography",
+      "tag": "#photos",
+      "pattern": ""
+    },
+    {
+      "folder": "home/areas/engineering",
+      "tag": "#eng",
+      "pattern": ""
+    },
+    {
+      "folder": "home/projects",
+      "tag": "#projects",
+      "pattern": ""
+    },
+    {
+      "folder": "home/resources",
+      "tag": "#resources",
+      "pattern": ""
+    },
+    {
+      "folder": "home/archives",
+      "tag": "#archive",
+      "pattern": ""
+    },
+    {
+      "folder": "home/resources/table tennis",
+      "tag": "#tt",
+      "pattern": ""
+    },
+    {
+      "folder": "school/science",
+      "tag": "#science",
+      "pattern": ""
+    },
+    {
+      "folder": "school/chinese",
+      "tag": "#chinese",
+      "pattern": ""
+    },
+    {
+      "folder": "school/english",
+      "tag": "#english",
+      "pattern": ""
+    },
+    {
+      "folder": "school/geography",
+      "tag": "#geography",
+      "pattern": ""
+    },
+    {
+      "folder": "school/history",
+      "tag": "#history",
+      "pattern": ""
+    },
+    {
+      "folder": "school/maths",
+      "tag": "#maths",
+      "pattern": ""
+    },
+    {
+      "folder": "home/areas/photography/birds",
+      "tag": "#birds",
+      "pattern": ""
+    }
+  ],
+  "use_regex_to_check_for_excluded_folder": false,
+  "excluded_folder": [
+    {
+      "folder": ""
+    }
+  ]
+}

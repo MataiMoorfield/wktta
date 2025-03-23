@@ -1,0 +1,9 @@
+{
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "livePreview": true,
+  "strictLineBreaks": true,
+  "tabSize": 4,
+  "showLineNumber": true,
+  "vimMode": false
+}
