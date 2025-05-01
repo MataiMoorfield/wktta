@@ -5,7 +5,8 @@
             color: #333;
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             text-align: center;
             color: rgb(0, 0, 0);
             margin-bottom: 20px;
@@ -45,4 +46,29 @@
         .dataTables_paginate,
         .dataTables_length {
             display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: small;
+            }
+
+            #example thead th {
+                padding: 10px 5px;
+            }
+
+            #example tbody td {
+                padding: 5px 1px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #example thead th {
+                padding: 10px 5px;
+                align-items: center;
+            }
+
+            #example tbody td {
+                padding: 0px 0px;
+            }
         }
