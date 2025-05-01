@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var table = $('#example').DataTable({
-        ajax: 'https://script.google.com/a/macros/moorfield.co.nz/s/AKfycbxzSjupb9NoGxWBuriGMfmk9pW1rlqdMOscXn196wf3pDlLr-EwBrFoM745617adu5Kag/exec',
+        ajax: 'https://script.google.com/macros/s/AKfycbxeWPkvb0SqLdXfHm1c98zpQ30tGk3H8c6u4CxhsJqUUDbG4UwNnXrie17KcCwgn7Lk/exec',
         columns: [
             { data: 'Time', orderable: false },
             { data: 'Player 1', orderable: false },
@@ -18,3 +18,5 @@ $(document).ready(function () {
         table.ajax.reload();
     }, 10000);
 });
+
+// https://script.google.com/macros/s/AKfycbxeWPkvb0SqLdXfHm1c98zpQ30tGk3H8c6u4CxhsJqUUDbG4UwNnXrie17KcCwgn7Lk/exec
