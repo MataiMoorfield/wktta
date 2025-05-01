@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var table = $('#example').DataTable({
+    var table = $('#example').DataTable({ // spreadsheet link (JSON web app)
         ajax: 'https://script.google.com/macros/s/AKfycbxeWPkvb0SqLdXfHm1c98zpQ30tGk3H8c6u4CxhsJqUUDbG4UwNnXrie17KcCwgn7Lk/exec',
         columns: [
             { data: 'Time', orderable: false },
@@ -13,10 +13,8 @@ $(document).ready(function () {
         lengthChange: false
     });
 
-    // auto reload 10 sec
+    // reload 10 sec
     setInterval(function () {
         table.ajax.reload();
     }, 10000);
 });
-
-// https://script.google.com/macros/s/AKfycbxeWPkvb0SqLdXfHm1c98zpQ30tGk3H8c6u4CxhsJqUUDbG4UwNnXrie17KcCwgn7Lk/exec
