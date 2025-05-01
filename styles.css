@@ -1,5 +1,5 @@
         body {
-            font-family: sans-serif;
+            font-family: 'Trebuchet MS', sans-serif;
             padding: 30px;
             background-color: #f4f4f4;
             color: #333;
@@ -11,6 +11,17 @@
             color: rgb(0, 0, 0);
             margin-bottom: 20px;
         }
+
+        .footer {
+            font-size: 12px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(217, 0, 21);
+            color: white;
+            text-align: center;
+         }
 
         #example {
             width: 100% !important;
