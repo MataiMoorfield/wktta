@@ -10,7 +10,8 @@ $(document).ready(function () {
         ],
         paging: false,
         info: false,
-        lengthChange: false
+        lengthChange: false,
+        searching: false
     });
 
     // reload 10 sec
