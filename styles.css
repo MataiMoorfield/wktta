@@ -1,86 +1,87 @@
-        body {
-            font-family: 'Trebuchet MS', sans-serif;
-            padding: 30px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    padding: 30px;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-        h1,
-        h2 {
-            text-align: center;
-            color: rgb(0, 0, 0);
-            margin-bottom: 20px;
-        }
+h1,
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
 
-        .footer {
-            font-size: 12px;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: rgb(217, 0, 21);
-            color: white;
-            text-align: center;
-        }
+.footer {
+    font-size: 12px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(217, 0, 21);
+    color: white;
+    text-align: center;
+}
 
-        #example {
-            width: 100% !important;
-            border-collapse: collapse;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-            border-radius: 8px;
-            overflow: hidden;
-            background-color: white;
-        }
+#example {
+    width: 100% !important;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
 
-        #example thead th {
-            background-color: rgb(217, 0, 21);
-            color: white;
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 2px solid #ddd;
-        }
+#example thead th {
+    background-color: rgb(217, 0, 21);
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
 
-        #example tbody td {
-            padding: 10px 15px;
-            border-bottom: 1px solid #eee;
-        }
+#example tbody td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+}
 
-        #example tbody tr:hover {
-            background-color: #e9ecef;
-        }
+#example tbody tr:hover {
+    background-color: #e9ecef;
+}
 
-        #example thead th {
-            background-image: none !important;
-        }
+#example thead th {
+    background-image: none !important;
+}
 
-        .dataTables_info,
-        .dataTables_paginate,
-        .dataTables_length {
-            display: none;
-        }
+.dataTables_info,
+.dataTables_paginate,
+.dataTables_length {
+    display: none;
+}
 
-        @media screen and (max-width: 768px) {
-            body {
-                font-size: small;
-                padding: 3px;
-            }
+@media screen and (max-width: 768px) {
+    body {
+        font-size: small;
+        padding: 3px;
+    }
 
-            #example thead th {
-                padding: 10px 5px;
-            }
+    #example thead th {
+        padding: 10px 5px;
+    }
 
-            #example tbody td {
-                padding: 5px 1px;
-            }
-        }
+    #example tbody td {
+        padding: 5px 1px;
+    }
+}
 
-        @media screen and (max-width: 480px) {
-            body {
-                font-size: small;
-                padding: 0px;
-            }
+@media screen and (max-width: 480px) {
+    body {
+        font-size: small;
+        padding: 0px;
+    }
 
-            #example thead th {
-                align-items: center;
-            }
-        }
+    #example thead th {
+        align-items: center;
+    }
+}
+
