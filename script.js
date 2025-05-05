@@ -7,7 +7,8 @@ $(document).ready(function () {
             { data: 'Player 2', orderable: false },
             { data: 'Table', orderable: false },
             { data: 'Match', orderable: false },
-            { data: 'Next On', orderable: false }
+            { data: 'Waiting For', orderable: false },
+            { data: 'Next On', orderable: false },
         ],
         paging: false,
         info: false,
