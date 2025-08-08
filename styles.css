@@ -43,7 +43,7 @@ h2 {
 }
 
 #example tbody td {
- 
+ /*    padding: 10px 15px; */
     border-bottom: 1px solid #eee;
 }
 
