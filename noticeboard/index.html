@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>WkTTA Live Matches</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="../styles.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
@@ -18,7 +17,14 @@
             color: #333;
         }
 
-        h1, h2 {
+        p,
+        a {
+            text-align: center;
+        }
+
+
+        h1,
+        h2 {
             text-align: center;
             color: #1b3a57;
         }
@@ -85,7 +91,9 @@
 
         /* Responsive */
         @media (max-width: 900px) {
-            table.dataTable, #noticesList {
+
+            table.dataTable,
+            #noticesList {
                 width: 90% !important;
             }
 
@@ -105,8 +113,13 @@
         <!-- Notices will appear here -->
     </ul>
 
+<br><br>
     <!-- Changes to Schedule Table -->
     <h2>Changes to Schedule</h2>
+        <p>
+        Please refer to the "Changes To Schedule" table below and report to the Tournament Control Desk if you see your
+        name mentioned.
+    </p>
     <table id="changesTable" class="display">
         <thead>
             <tr>
@@ -117,6 +130,17 @@
             </tr>
         </thead>
     </table>
+
+    <p>
+        Please refer to the "Table Schedule" printout (pinned to the noticeboard) to see the status of <B>all</B>
+        matches.
+    </p>
+
+
+    <p><a href="https://ttnz.tournamentsoftware.com/tournament/6A480ECB-E5BE-4E8C-86EF-B2AD68B05FC7" target="_blank">
+        Click here to review your planned scheduled matches on the TTNZ Tournament Software website
+    </a></p>
+
 
     <div class="footer">
         <p>Copyright 2025 Waikato Table Tennis. All Rights Reserved.</p>
